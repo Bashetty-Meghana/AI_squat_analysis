@@ -1,0 +1,311 @@
+{
+  "standards_version": "1.0.0",
+  "source_document": {
+    "title": "Starting Strength: Basic Barbell Training - The Squat",
+    "author": "Mark Rippetoe",
+    "reference_pages": "Ref pp. 1-35",
+    "combined_pdf_pages": "PDF pp. 4-38"
+  },
+  "is_side_view": true,
+  "view_classification": "sagittal_side_view",
+  "global_issues": [],
+  "repetitions": [
+    {
+      "rep_id": 1,
+      "duration_seconds": 4.3329661016949155,
+      "start_timestamp": 0.0,
+      "bottom_timestamp": 2.133152542372881,
+      "end_timestamp": 4.3329661016949155,
+      "findings": [
+        {
+          "repetition_id": 1,
+          "criterion_id": "depth_below_parallel",
+          "criterion_name": "Squat Depth (Below Parallel)",
+          "source_section": "Squat Depth \u2013 Safety and Importance",
+          "source_citation": "Ref p. 2, Fig 2-1; Ref p. 15; Ref p. 16, Fig 2-10; Ref p. 35 (PDF pp. 5, 18, 19, 38)",
+          "result": "DOES_NOT_MEET_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 2.133152542372881,
+            "frame_index": 64,
+            "observed_measurement": "Depth Margin = -10.9px (High / Above parallel)",
+            "standard_benchmark": "Hip crease must drop below the top of the patella (Figure 2-1)"
+          },
+          "explanation": "Hip crease remained 10.9px above the top of the patella (partial squat).",
+          "actionable_feedback": "Squat was high (above parallel). The hip crease remained above the top of the patella. As stated on Ref p. 15, partial squats predominantly stress the quadriceps and patellar tendon without recruiting the posterior chain. Check stance width and shove knees out to reach full depth.",
+          "uncertainty_and_limitations": "Calculated between detected hip joint and patella apex. Clothing folds or loose shorts may add minor variance."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "bar_path_verticality_midfoot",
+          "criterion_name": "Bar Path Verticality & Midfoot Balance",
+          "source_section": "Loaded Human Movement",
+          "source_citation": "Ref p. 6; Ref p. 8, Fig 2-5; Ref p. 9, Fig 2-6; Ref p. 11, Fig 2-7; Ref p. 32, Fig 2-22 (PDF pp. 9, 11, 12, 14, 35)",
+          "result": "DOES_NOT_MEET_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 2.133152542372881,
+            "frame_index": 64,
+            "observed_measurement": "Max Bar Drift = 287.5px, Normalized Drift Ratio = 1.19",
+            "standard_benchmark": "Straight vertical line directly over midfoot balance point (Figure 2-5)"
+          },
+          "explanation": "Excessive horizontal bar drift (287.5px, drift ratio: 1.19) observed relative to midfoot.",
+          "actionable_feedback": "Excessive horizontal bar drift detected relative to the midfoot balance point. Ref p. 11 explains that horizontal motion is not work against gravity and creates unwanted leverage that drastically increases effort and risks missed repetitions. Keep the weight balanced over the arch of your foot.",
+          "uncertainty_and_limitations": "Barbell sleeve center tracked visually with Kalman smoothing. Midfoot located halfway along shoe sole."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "back_angle_inclination",
+          "criterion_name": "Back Angle at Bottom (~45\u00b0 Inclined / Non-Vertical)",
+          "source_section": "Figure 2-5, Figure 2-13 & The Important Things You're Going to Do Wrong",
+          "source_citation": "Ref p. 9, Fig 2-5; Ref p. 12; Ref p. 22, Fig 2-13; Ref p. 32, Fig 2-22; Ref p. 35 (PDF pp. 12, 15, 25, 35, 38)",
+          "result": "MEETS_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 2.133152542372881,
+            "frame_index": 64,
+            "observed_measurement": "Back Angle = 55.9\u00b0 to horizontal",
+            "standard_benchmark": "Approximately 45\u00b0 inclined relative to horizontal floor (Ref p. 22 Fig 2-13)"
+          },
+          "explanation": "Torso inclination was 55.9\u00b0 relative to horizontal, adhering to the ~45\u00b0 low-bar model.",
+          "actionable_feedback": "Back angle is appropriately inclined (~45\u00b0 relative to the floor), enabling proper hamstring tension and balance of forces around the hip and knee joints.",
+          "uncertainty_and_limitations": "Torso plane vector measured between hip joint and shoulder acromion. Shoulder position partially occluded by bumper plate."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "hip_drive_initiation",
+          "criterion_name": "Hip Drive Initiation out of Bottom",
+          "source_section": "Hip Drive & Generating Hip Drive",
+          "source_citation": "Ref p. 1; Ref p. 22, Fig 2-14; Ref p. 23; Ref p. 32, Fig 2-22; Ref p. 35 (PDF pp. 4, 25, 26, 35, 38)",
+          "result": "MEETS_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 2.133152542372881,
+            "frame_index": 64,
+            "observed_measurement": "Early Ascent Torso Shift = +7.6\u00b0, Hip Rise = 194.1px",
+            "standard_benchmark": "Hips shove straight up out of the bottom while preserving back angle (Ref p. 1, 23)"
+          },
+          "explanation": "Hips drove upward (194.1px) while preserving torso inclination (angle shift: +7.6\u00b0).",
+          "actionable_feedback": "Ascent was properly initiated via hip drive: hips drove straight up out of the hole with stable back angle, fully firing the posterior chain.",
+          "uncertainty_and_limitations": "Evaluated across initial 35% of ascent turnaround window."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "eye_gaze_cervical_spine",
+          "criterion_name": "Eye Gaze & Cervical Spine Position",
+          "source_section": "Eye Gaze Direction",
+          "source_citation": "Ref pp. 23-25, Fig 2-15, Fig 2-16; Ref p. 35 (PDF pp. 26-28, 38)",
+          "result": "DOES_NOT_MEET_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 2.133152542372881,
+            "frame_index": 64,
+            "observed_measurement": "Head/Neck Tilt = 75.8\u00b0 (Looking up)",
+            "standard_benchmark": "Eyes fixed on floor 4-5 feet ahead with chin neutral (Ref pp. 23-25)"
+          },
+          "explanation": "Lifter looked up at ceiling/wall (cervical hyperextension angle: 75.8\u00b0).",
+          "actionable_feedback": "Looking up at the ceiling or wall. Ref p. 23 explains that upward gaze slacks the posterior chain, pulls the chest and knees forward, and places the cervical spine in unsafe hyperextension under barbell load. Keep your chin down and fix your eyes on the floor 4-5 feet in front.",
+          "uncertainty_and_limitations": "Measured from ear, eye, and torso vectors. Hats or hair may add tracking noise."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "knee_forward_travel_at_bottom",
+          "criterion_name": "Knee Position at Bottom",
+          "source_section": "Figure 2-13 & Figure 2-22",
+          "source_citation": "Ref p. 22, Fig 2-13; Ref p. 32, Fig 2-22; Ref p. 35 (PDF pp. 25, 35, 38)",
+          "result": "DOES_NOT_MEET_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 2.133152542372881,
+            "frame_index": 64,
+            "observed_measurement": "Knee Forward Ratio = 0.59",
+            "standard_benchmark": "Knees just a little in front of the toes at bottom (Ref p. 22 Fig 2-13)"
+          },
+          "explanation": "Knees slid excessively forward past toes at bottom (ratio: 0.59).",
+          "actionable_feedback": "Knees traveled excessively forward past the toes at the bottom. Ref p. 20 notes that excessive forward knee travel shifts load heavily onto the quads and patellar tendon, removing tension from the hamstrings.",
+          "uncertainty_and_limitations": "Evaluates sagittal knee advance. Lateral knee tracking is non-assessable from side view."
+        }
+      ],
+      "summary": {
+        "status": "NEEDS_WORK",
+        "meets_count": 2,
+        "fails_count": 4,
+        "cannot_assess_count": 0
+      }
+    },
+    {
+      "rep_id": 2,
+      "duration_seconds": 3.466372881355932,
+      "start_timestamp": 4.3329661016949155,
+      "bottom_timestamp": 6.232805084745762,
+      "end_timestamp": 7.7993389830508475,
+      "findings": [
+        {
+          "repetition_id": 2,
+          "criterion_id": "depth_below_parallel",
+          "criterion_name": "Squat Depth (Below Parallel)",
+          "source_section": "Squat Depth \u2013 Safety and Importance",
+          "source_citation": "Ref p. 2, Fig 2-1; Ref p. 15; Ref p. 16, Fig 2-10; Ref p. 35 (PDF pp. 5, 18, 19, 38)",
+          "result": "MEETS_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 6.232805084745762,
+            "frame_index": 187,
+            "observed_measurement": "Depth Margin = +10.6px (Below parallel)",
+            "standard_benchmark": "Hip crease must drop below the top of the patella (Figure 2-1)"
+          },
+          "explanation": "Hip crease dropped 10.6px below the top of the patella at the bottom turnaround (frame 187).",
+          "actionable_feedback": "Depth meets standard: Hip crease dropped below the top of the patella (below parallel). This satisfies Starting Strength full range of motion, fully engaging the hamstrings, glutes, and adductors while protecting the knees.",
+          "uncertainty_and_limitations": "Calculated between detected hip joint and patella apex. Clothing folds or loose shorts may add minor variance."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "bar_path_verticality_midfoot",
+          "criterion_name": "Bar Path Verticality & Midfoot Balance",
+          "source_section": "Loaded Human Movement",
+          "source_citation": "Ref p. 6; Ref p. 8, Fig 2-5; Ref p. 9, Fig 2-6; Ref p. 11, Fig 2-7; Ref p. 32, Fig 2-22 (PDF pp. 9, 11, 12, 14, 35)",
+          "result": "DOES_NOT_MEET_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 6.232805084745762,
+            "frame_index": 187,
+            "observed_measurement": "Max Bar Drift = 146.1px, Normalized Drift Ratio = 0.60",
+            "standard_benchmark": "Straight vertical line directly over midfoot balance point (Figure 2-5)"
+          },
+          "explanation": "Excessive horizontal bar drift (146.1px, drift ratio: 0.60) observed relative to midfoot.",
+          "actionable_feedback": "Excessive horizontal bar drift detected relative to the midfoot balance point. Ref p. 11 explains that horizontal motion is not work against gravity and creates unwanted leverage that drastically increases effort and risks missed repetitions. Keep the weight balanced over the arch of your foot.",
+          "uncertainty_and_limitations": "Barbell sleeve center tracked visually with Kalman smoothing. Midfoot located halfway along shoe sole."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "back_angle_inclination",
+          "criterion_name": "Back Angle at Bottom (~45\u00b0 Inclined / Non-Vertical)",
+          "source_section": "Figure 2-5, Figure 2-13 & The Important Things You're Going to Do Wrong",
+          "source_citation": "Ref p. 9, Fig 2-5; Ref p. 12; Ref p. 22, Fig 2-13; Ref p. 32, Fig 2-22; Ref p. 35 (PDF pp. 12, 15, 25, 35, 38)",
+          "result": "MEETS_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 6.232805084745762,
+            "frame_index": 187,
+            "observed_measurement": "Back Angle = 59.3\u00b0 to horizontal",
+            "standard_benchmark": "Approximately 45\u00b0 inclined relative to horizontal floor (Ref p. 22 Fig 2-13)"
+          },
+          "explanation": "Torso inclination was 59.3\u00b0 relative to horizontal, adhering to the ~45\u00b0 low-bar model.",
+          "actionable_feedback": "Back angle is appropriately inclined (~45\u00b0 relative to the floor), enabling proper hamstring tension and balance of forces around the hip and knee joints.",
+          "uncertainty_and_limitations": "Torso plane vector measured between hip joint and shoulder acromion. Shoulder position partially occluded by bumper plate."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "hip_drive_initiation",
+          "criterion_name": "Hip Drive Initiation out of Bottom",
+          "source_section": "Hip Drive & Generating Hip Drive",
+          "source_citation": "Ref p. 1; Ref p. 22, Fig 2-14; Ref p. 23; Ref p. 32, Fig 2-22; Ref p. 35 (PDF pp. 4, 25, 26, 35, 38)",
+          "result": "MEETS_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 6.232805084745762,
+            "frame_index": 187,
+            "observed_measurement": "Early Ascent Torso Shift = +1.2\u00b0, Hip Rise = 139.2px",
+            "standard_benchmark": "Hips shove straight up out of the bottom while preserving back angle (Ref p. 1, 23)"
+          },
+          "explanation": "Hips drove upward (139.2px) while preserving torso inclination (angle shift: +1.2\u00b0).",
+          "actionable_feedback": "Ascent was properly initiated via hip drive: hips drove straight up out of the hole with stable back angle, fully firing the posterior chain.",
+          "uncertainty_and_limitations": "Evaluated across initial 35% of ascent turnaround window."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "eye_gaze_cervical_spine",
+          "criterion_name": "Eye Gaze & Cervical Spine Position",
+          "source_section": "Eye Gaze Direction",
+          "source_citation": "Ref pp. 23-25, Fig 2-15, Fig 2-16; Ref p. 35 (PDF pp. 26-28, 38)",
+          "result": "DOES_NOT_MEET_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 6.232805084745762,
+            "frame_index": 187,
+            "observed_measurement": "Head/Neck Tilt = 77.2\u00b0 (Looking up)",
+            "standard_benchmark": "Eyes fixed on floor 4-5 feet ahead with chin neutral (Ref pp. 23-25)"
+          },
+          "explanation": "Lifter looked up at ceiling/wall (cervical hyperextension angle: 77.2\u00b0).",
+          "actionable_feedback": "Looking up at the ceiling or wall. Ref p. 23 explains that upward gaze slacks the posterior chain, pulls the chest and knees forward, and places the cervical spine in unsafe hyperextension under barbell load. Keep your chin down and fix your eyes on the floor 4-5 feet in front.",
+          "uncertainty_and_limitations": "Measured from ear, eye, and torso vectors. Hats or hair may add tracking noise."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "knee_forward_travel_at_bottom",
+          "criterion_name": "Knee Position at Bottom",
+          "source_section": "Figure 2-13 & Figure 2-22",
+          "source_citation": "Ref p. 22, Fig 2-13; Ref p. 32, Fig 2-22; Ref p. 35 (PDF pp. 25, 35, 38)",
+          "result": "DOES_NOT_MEET_STANDARD",
+          "supporting_evidence": {
+            "timestamp_seconds": 6.232805084745762,
+            "frame_index": 187,
+            "observed_measurement": "Knee Forward Ratio = 0.59",
+            "standard_benchmark": "Knees just a little in front of the toes at bottom (Ref p. 22 Fig 2-13)"
+          },
+          "explanation": "Knees slid excessively forward past toes at bottom (ratio: 0.59).",
+          "actionable_feedback": "Knees traveled excessively forward past the toes at the bottom. Ref p. 20 notes that excessive forward knee travel shifts load heavily onto the quads and patellar tendon, removing tension from the hamstrings.",
+          "uncertainty_and_limitations": "Evaluates sagittal knee advance. Lateral knee tracking is non-assessable from side view."
+        }
+      ],
+      "summary": {
+        "status": "NEEDS_WORK",
+        "meets_count": 3,
+        "fails_count": 3,
+        "cannot_assess_count": 0
+      }
+    }
+  ],
+  "session_summary": {
+    "grade": "NON_COMPLIANT_DEPTH",
+    "reps_detected": 2,
+    "reps_meeting_depth": 1,
+    "headline": "1 of 2 Reps Met Starting Strength Depth Standards",
+    "primary_coaching_cue": "Squat was high (above parallel). The hip crease remained above the top of the patella. As stated on Ref p. 15, partial squats predominantly stress the quadriceps and patellar tendon without recruiting the posterior chain. Check stance width and shove knees out to reach full depth."
+  },
+  "non_assessable_side_view_criteria": [
+    {
+      "criterion_id": "stance_width_shoulder_heels",
+      "criterion_name": "Stance Width (Heels Shoulder-Width Apart)",
+      "source_section": "Generating hip drive",
+      "citation": "Ref p. 14; Ref p. 20, Fig 2-12; Ref p. 35 (PDF pp. 17, 23, 38)",
+      "standard_description": "Heels should be approximately shoulder-width apart. Excessively wide stance causes adductors to reach end of extensibility early; excessive narrowness jams thighs against the belly. Both prevent proper depth.",
+      "status": "CANNOT_ASSESS_FROM_SIDE_VIEW",
+      "explanation": "CANNOT ASSESS FROM 2D SAGITTAL SIDE VIEW. Heel-to-heel lateral spacing requires a frontal, rear, or top-down camera angle. In a pure side view, the lateral dimension is compressed to zero depth. Per Starting Strength Ref p. 14, verify stance width with a front/rear camera check."
+    },
+    {
+      "criterion_id": "toe_angle_30_degrees",
+      "criterion_name": "Toe Angle (~30\u00b0 Outward)",
+      "source_section": "Generating hip drive",
+      "citation": "Ref p. 14; Ref p. 20, Fig 2-12; Ref p. 35 (PDF pp. 17, 23, 38)",
+      "standard_description": "Toes should point outward at approximately 30 degrees to match the femur angle and allow knees to track properly.",
+      "status": "CANNOT_ASSESS_FROM_SIDE_VIEW",
+      "explanation": "CANNOT ASSESS FROM 2D SAGITTAL SIDE VIEW. Horizontal 30-degree toe flair requires an overhead or frontal camera view. Side-view projection collapses foot rotation. Ref p. 14 recommends looking down at your feet before unracking."
+    },
+    {
+      "criterion_id": "knees_shoved_out_lateral",
+      "criterion_name": "Knees Shoved Out / Thighs Parallel to Feet",
+      "source_section": "Generating hip drive & Squat Depth",
+      "citation": "Ref p. 14; Ref p. 22, Fig 2-13; Ref p. 33; Ref p. 35 (PDF pp. 17, 25, 36, 38)",
+      "standard_description": "Knees must be actively shoved outward during descent so femurs track parallel to feet, engaging adductors and external rotators. Lateral knee cave (valgus) diminishes hip drive and causes high squats.",
+      "status": "CANNOT_ASSESS_FROM_SIDE_VIEW",
+      "explanation": "CANNOT ASSESS FROM 2D SAGITTAL SIDE VIEW. Lateral knee tracking occurs in the frontal plane. From the side, the closer leg occludes the far leg and lateral knee cave cannot be distinguished from sagittal knee travel. Ref p. 33 notes if depth is high, actively shove knees out."
+    },
+    {
+      "criterion_id": "grip_and_wrist_straightness",
+      "criterion_name": "Grip & Wrist Alignment (Thumbs on top, straight wrists)",
+      "source_section": "Wrist alignment on the bar",
+      "citation": "Ref pp. 27-28, Fig 2-17, Fig 2-18 (PDF pp. 30-31)",
+      "standard_description": "Thumbs placed on top of bar, wrists straight with forearms, elbows lifted to trap bar against back. Prevents wrist/elbow pain from carrying load on arms.",
+      "status": "CANNOT_ASSESS_FROM_SIDE_VIEW",
+      "explanation": "CANNOT ASSESS FROM SIDE VIEW. Standard barbell plates and shoulders occlude hands and wrists in sagittal profile. Thumbs on top and straight wrist alignment should be checked during rack setup (Ref p. 28)."
+    },
+    {
+      "criterion_id": "bar_placement_scapula_shelf",
+      "criterion_name": "Bar Placement (Low-Bar Scapular Spine Shelf)",
+      "source_section": "Bar Placement & Wrist Alignment",
+      "citation": "Ref p. 13, Fig 2-8; Ref p. 29, Fig 2-19, Fig 2-20; Ref p. 35 (PDF pp. 16, 32, 38)",
+      "standard_description": "The bar should rest in the lowest secure position on the back: directly below the spine of the scapula on the shelf formed by the posterior deltoids. If placed high on the traps (high-bar), it forces a vertical torso and knee-dominant mechanics.",
+      "status": "CANNOT_ASSESS_FROM_SIDE_VIEW",
+      "explanation": "Bar placement cannot be definitively confirmed from side view: standard 45lb/20kg bumper plates occlude the lifter's upper back and scapular spine. In accordance with assignment instructions, unassessable result reported rather than invented precision."
+    },
+    {
+      "criterion_id": "rack_height_and_unrack",
+      "criterion_name": "Rack Height & Unrack Technique",
+      "source_section": "Adding the bar & Unracking",
+      "citation": "Ref p. 26; Ref p. 30, Fig 2-21; Ref p. 33; Ref p. 35 (PDF pp. 29, 33, 36, 38)",
+      "standard_description": "Rack height set at mid-sternum. Lifter steps back out of the rack with 1 step, both feet under bar, tight chest/back. Never step backward to rack.",
+      "status": "CANNOT_ASSESS_FROM_SIDE_VIEW",
+      "explanation": "CANNOT ASSESS: Video starts with lifter already in position or rack uprights are outside the camera frame."
+    }
+  ]
+}
