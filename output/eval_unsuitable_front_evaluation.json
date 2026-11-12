@@ -1,0 +1,532 @@
+{
+  "evaluation_engine": "deterministic_grounded_rules",
+  "standards_version": "2.0.0",
+  "source_document": {
+    "title": "Starting Strength: Basic Barbell Training - Chapter 2: The Squat",
+    "author": "Mark Rippetoe",
+    "reference_pages": "Ref pp. 1-35",
+    "combined_pdf_pages": "PDF pp. 4-38"
+  },
+  "is_side_view": false,
+  "view_classification": "non_sagittal_or_frontal",
+  "calibration": {
+    "cm_per_px": 0.3463026318225648,
+    "px_per_cm": 2.887647704948342,
+    "ref_shank_px": 115.50590819793369,
+    "calibration_method": "Anthropometric Tibial Shank (~40.0 cm)"
+  },
+  "set_vbt_summary": {
+    "mean_set_velocity_mps": 0.35,
+    "peak_set_velocity_mps": 0.66,
+    "total_velocity_loss_pct": 0.0,
+    "mean_eccentric_duration_s": 1.23,
+    "mean_concentric_duration_s": 1.73,
+    "mean_pause_duration_s": 0.24,
+    "fastest_rep_id": 2,
+    "slowest_rep_id": 1
+  },
+  "global_issues": [
+    {
+      "type": "CAMERA_ANGLE_ERROR",
+      "title": "Non-Sagittal (Side-View) Angle Detected",
+      "message": "The video was recorded from a frontal, angled, or non-sagittal perspective. In Starting Strength (Ref p. 2 Fig 2-1 & Ref p. 8 Fig 2-5), squat depth, bar-path verticality, and back inclination are strictly defined in the sagittal plane. In a frontal projection, depth cannot be validated because the femur is foreshortened. Camera must be positioned 90 degrees directly to the side of the lifter at hip height.",
+      "actionable_cue": "Relocate camera to a pure side-view perpendicular to the lifter's stance at hip height."
+    }
+  ],
+  "repetitions": [
+    {
+      "rep_id": 1,
+      "duration_seconds": 2.7027,
+      "start_timestamp": 0.0,
+      "bottom_timestamp": 1.0343666666666667,
+      "end_timestamp": 2.7027,
+      "vbt": {
+        "mean_velocity_mps": 0.33,
+        "peak_velocity_mps": 0.58,
+        "concentric_duration_s": 1.67,
+        "eccentric_duration_s": 1.03,
+        "pause_duration_s": 0.27,
+        "tempo_notation": "1.0s - 0.3s - 1.7s",
+        "concentric_rom_cm": 55.2,
+        "velocity_loss_pct": 0.0,
+        "fatigue_zone": "EXPLOSIVE / MINIMAL FATIGUE",
+        "estimated_rir": "4+ RIR"
+      },
+      "depth_metrics": {
+        "hip_y": 537.284806639765,
+        "knee_y": 506.6592759910146,
+        "depth_margin_px": 30.625530648750328,
+        "depth_margin_cm": 10.6,
+        "depth_margin_ratio": 0.272888618338194,
+        "meets_standard": true,
+        "is_borderline": false,
+        "measurement_status": "OBSERVED"
+      },
+      "bar_path_metrics": {
+        "mean_offset_px": -24.857385763679957,
+        "max_drift_px": 411.48390293476166,
+        "max_drift_cm": 142.5,
+        "max_drift_ratio": 3.6665249992935744,
+        "meets_standard": false,
+        "tracking_status": "OBSERVED"
+      },
+      "findings": [
+        {
+          "repetition_id": 1,
+          "criterion_id": "depth_below_parallel",
+          "criterion_name": "Squat Depth (Below Parallel)",
+          "category": "biomechanics",
+          "assessable_status": "yes",
+          "source_citation": "Ref p. 2, Ref p. 15, Ref p. 17, Ref p. 35 (PDF p. 5, PDF p. 18, PDF p. 20, PDF p. 38) | Figure 2-1, Figure 2-10, Squat Depth \u2013 Safety and Importance",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 1.0343666666666667,
+            "frame_index": 31,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "The apex of the crease of the shorts (Point B) must drop clearly below the top of the patella (Point A) so the femoral plane breaks parallel with the floor."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "bar_path_verticality_midfoot",
+          "criterion_name": "Bar Path Verticality & Midfoot Balance",
+          "category": "mechanics",
+          "assessable_status": "yes",
+          "source_citation": "Ref p. 6, Ref p. 8, Ref p. 9, Ref p. 12, Ref p. 32 (PDF p. 9, PDF p. 11, PDF p. 12, PDF p. 15, PDF p. 35) | Figure 2-3, Figure 2-5, Figure 2-6, Figure 2-7, Figure 2-22, Loaded Human Movement",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 1.0343666666666667,
+            "frame_index": 31,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Barbell trajectory must travel in a straight vertical line directly over the balance point of the foot (the midfoot, halfway between heels and toes)."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "back_angle_inclination",
+          "criterion_name": "Back Angle at Bottom (~45\u00b0 Inclined / Non-Vertical)",
+          "category": "kinematics",
+          "assessable_status": "yes",
+          "source_citation": "Ref p. 9, Ref p. 12, Ref p. 21, Ref p. 22, Ref p. 32, Ref p. 35 (PDF p. 12, PDF p. 15, PDF p. 24, PDF p. 25, PDF p. 35, PDF p. 38) | Figure 2-5, Figure 2-13, Figure 2-22, The Important Things You're Going to Do Wrong",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 1.0343666666666667,
+            "frame_index": 31,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Torso must be inclined at approximately 45 degrees relative to the horizontal floor at the bottom of the low-bar squat, maintaining spinal rigidity rather than remaining vertical."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "hip_drive_initiation",
+          "criterion_name": "Hip Drive Initiation out of Bottom",
+          "category": "biomechanics",
+          "assessable_status": "partial",
+          "source_citation": "Ref p. 1, Ref p. 22, Ref p. 23, Ref p. 32, Ref p. 35 (PDF p. 4, PDF p. 25, PDF p. 26, PDF p. 35, PDF p. 38) | Figure 2-14, Figure 2-22, Generating Hip Drive",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 1.0343666666666667,
+            "frame_index": 31,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Ascent out of the bottom position must be driven by shoving the hips straight upward ('butt up, not forward'); torso angle must not open/lead with the chest early."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "knee_forward_travel_at_bottom",
+          "criterion_name": "Knee Position at Bottom",
+          "category": "kinematics",
+          "assessable_status": "partial",
+          "source_citation": "Ref p. 21, Ref p. 22, Ref p. 32, Ref p. 35 (PDF p. 24, PDF p. 25, PDF p. 35, PDF p. 38) | Figure 2-13, Figure 2-22, The Important Things You're Going to Do Wrong",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 1.0343666666666667,
+            "frame_index": 31,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Knees should travel just slightly in front of toes early in descent and remain anchored in place during the bottom third rather than sliding forward late."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 1,
+          "criterion_id": "eye_gaze_cervical_spine",
+          "criterion_name": "Eye Gaze & Cervical Spine Position",
+          "category": "alignment",
+          "assessable_status": "partial",
+          "source_citation": "Ref p. 23, Ref p. 24, Ref p. 25, Ref p. 26, Ref p. 35 (PDF p. 26, PDF p. 27, PDF p. 28, PDF p. 29, PDF p. 38) | Figure 2-15, Figure 2-16, Eye Gaze Direction",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 1.0343666666666667,
+            "frame_index": 31,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Gaze must remain directed downward at a point on the floor 4 to 5 feet ahead with chin neutral, avoiding cervical hyperextension under barbell load."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        }
+      ],
+      "summary": {
+        "status": "PARTIAL",
+        "meets_count": 0,
+        "fails_count": 0,
+        "cannot_assess_count": 6
+      }
+    },
+    {
+      "rep_id": 2,
+      "duration_seconds": 3.2365666666666666,
+      "start_timestamp": 2.7027,
+      "bottom_timestamp": 4.137466666666667,
+      "end_timestamp": 5.939266666666667,
+      "vbt": {
+        "mean_velocity_mps": 0.38,
+        "peak_velocity_mps": 0.66,
+        "concentric_duration_s": 1.8,
+        "eccentric_duration_s": 1.43,
+        "pause_duration_s": 0.2,
+        "tempo_notation": "1.4s - 0.2s - 1.8s",
+        "concentric_rom_cm": 68.1,
+        "velocity_loss_pct": 0.0,
+        "fatigue_zone": "EXPLOSIVE / MINIMAL FATIGUE",
+        "estimated_rir": "4+ RIR"
+      },
+      "depth_metrics": {
+        "hip_y": 484.424912452413,
+        "knee_y": 503.0183156370776,
+        "depth_margin_px": -18.593403184664567,
+        "depth_margin_cm": -6.4,
+        "depth_margin_ratio": -0.1774282978778169,
+        "meets_standard": false,
+        "is_borderline": false,
+        "measurement_status": "OBSERVED"
+      },
+      "bar_path_metrics": {
+        "mean_offset_px": 27.995499219692856,
+        "max_drift_px": 332.5083291972413,
+        "max_drift_cm": 115.1,
+        "max_drift_ratio": 3.1729741077374296,
+        "meets_standard": false,
+        "tracking_status": "OBSERVED"
+      },
+      "findings": [
+        {
+          "repetition_id": 2,
+          "criterion_id": "depth_below_parallel",
+          "criterion_name": "Squat Depth (Below Parallel)",
+          "category": "biomechanics",
+          "assessable_status": "yes",
+          "source_citation": "Ref p. 2, Ref p. 15, Ref p. 17, Ref p. 35 (PDF p. 5, PDF p. 18, PDF p. 20, PDF p. 38) | Figure 2-1, Figure 2-10, Squat Depth \u2013 Safety and Importance",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 4.137466666666667,
+            "frame_index": 124,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "The apex of the crease of the shorts (Point B) must drop clearly below the top of the patella (Point A) so the femoral plane breaks parallel with the floor."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "bar_path_verticality_midfoot",
+          "criterion_name": "Bar Path Verticality & Midfoot Balance",
+          "category": "mechanics",
+          "assessable_status": "yes",
+          "source_citation": "Ref p. 6, Ref p. 8, Ref p. 9, Ref p. 12, Ref p. 32 (PDF p. 9, PDF p. 11, PDF p. 12, PDF p. 15, PDF p. 35) | Figure 2-3, Figure 2-5, Figure 2-6, Figure 2-7, Figure 2-22, Loaded Human Movement",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 4.137466666666667,
+            "frame_index": 124,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Barbell trajectory must travel in a straight vertical line directly over the balance point of the foot (the midfoot, halfway between heels and toes)."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "back_angle_inclination",
+          "criterion_name": "Back Angle at Bottom (~45\u00b0 Inclined / Non-Vertical)",
+          "category": "kinematics",
+          "assessable_status": "yes",
+          "source_citation": "Ref p. 9, Ref p. 12, Ref p. 21, Ref p. 22, Ref p. 32, Ref p. 35 (PDF p. 12, PDF p. 15, PDF p. 24, PDF p. 25, PDF p. 35, PDF p. 38) | Figure 2-5, Figure 2-13, Figure 2-22, The Important Things You're Going to Do Wrong",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 4.137466666666667,
+            "frame_index": 124,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Torso must be inclined at approximately 45 degrees relative to the horizontal floor at the bottom of the low-bar squat, maintaining spinal rigidity rather than remaining vertical."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "hip_drive_initiation",
+          "criterion_name": "Hip Drive Initiation out of Bottom",
+          "category": "biomechanics",
+          "assessable_status": "partial",
+          "source_citation": "Ref p. 1, Ref p. 22, Ref p. 23, Ref p. 32, Ref p. 35 (PDF p. 4, PDF p. 25, PDF p. 26, PDF p. 35, PDF p. 38) | Figure 2-14, Figure 2-22, Generating Hip Drive",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 4.137466666666667,
+            "frame_index": 124,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Ascent out of the bottom position must be driven by shoving the hips straight upward ('butt up, not forward'); torso angle must not open/lead with the chest early."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "knee_forward_travel_at_bottom",
+          "criterion_name": "Knee Position at Bottom",
+          "category": "kinematics",
+          "assessable_status": "partial",
+          "source_citation": "Ref p. 21, Ref p. 22, Ref p. 32, Ref p. 35 (PDF p. 24, PDF p. 25, PDF p. 35, PDF p. 38) | Figure 2-13, Figure 2-22, The Important Things You're Going to Do Wrong",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 4.137466666666667,
+            "frame_index": 124,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Knees should travel just slightly in front of toes early in descent and remain anchored in place during the bottom third rather than sliding forward late."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        },
+        {
+          "repetition_id": 2,
+          "criterion_id": "eye_gaze_cervical_spine",
+          "criterion_name": "Eye Gaze & Cervical Spine Position",
+          "category": "alignment",
+          "assessable_status": "partial",
+          "source_citation": "Ref p. 23, Ref p. 24, Ref p. 25, Ref p. 26, Ref p. 35 (PDF p. 26, PDF p. 27, PDF p. 28, PDF p. 29, PDF p. 38) | Figure 2-15, Figure 2-16, Eye Gaze Direction",
+          "result": "CANNOT_ASSESS",
+          "supporting_evidence": {
+            "timestamp_seconds": 4.137466666666667,
+            "frame_index": 124,
+            "observed_measurement": "Non-sagittal camera angle",
+            "measurement_status": "LOST",
+            "standard_benchmark": "Gaze must remain directed downward at a point on the floor 4 to 5 feet ahead with chin neutral, avoiding cervical hyperextension under barbell load."
+          },
+          "explanation": "Cannot assess sagittal planar biomechanics from a frontal or off-angle view. Plane between hip crease and patella cannot be resolved.",
+          "actionable_feedback": "Record from a 90\u00b0 perpendicular side view at hip height.",
+          "uncertainty_and_limitations": "Camera perspective violation prevents planar measurement."
+        }
+      ],
+      "summary": {
+        "status": "PARTIAL",
+        "meets_count": 0,
+        "fails_count": 0,
+        "cannot_assess_count": 6
+      }
+    }
+  ],
+  "session_summary": {
+    "grade": "UNSUITABLE_RECORDING",
+    "reps_detected": 2,
+    "headline": "Recording Unsuitable for Complete Biomechanical Assessment",
+    "primary_coaching_cue": "Relocate camera to a pure side-view perpendicular to the lifter's stance at hip height.",
+    "top_fixes": [
+      "Relocate camera to a pure side-view perpendicular to the lifter's stance at hip height."
+    ]
+  },
+  "non_assessable_side_view_criteria": [
+    {
+      "criterion_name": "Stance Width (Heels Shoulder-Width Apart)",
+      "source_section": "Generating hip drive & Learning to Squat",
+      "source_ref_pages": [
+        "Ref p. 14",
+        "Ref p. 20",
+        "Ref p. 32",
+        "Ref p. 35"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 17",
+        "PDF p. 23",
+        "PDF p. 35",
+        "PDF p. 38"
+      ],
+      "figures": [
+        "Figure 2-12"
+      ],
+      "standard_description": "Heels should be approximately shoulder-width apart. Excessively wide stance limits depth; narrow stance jams thighs against gut.",
+      "why_unassessable": "Stance width is a coronal-plane measurement. A 2D side-view camera collapses the lateral axis. Verify by recording a frontal or rear view."
+    },
+    {
+      "criterion_name": "Toe Angle (~30\u00b0 Outward)",
+      "source_section": "Generating hip drive & Foot Placement",
+      "source_ref_pages": [
+        "Ref p. 14",
+        "Ref p. 20",
+        "Ref p. 32",
+        "Ref p. 35"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 17",
+        "PDF p. 23",
+        "PDF p. 35",
+        "PDF p. 38"
+      ],
+      "figures": [
+        "Figure 2-12"
+      ],
+      "standard_description": "Toes should point outward at approximately 30 degrees to align femurs and adductor origin/insertion angles.",
+      "why_unassessable": "Transverse-plane rotational angle. Side-view perspective cannot resolve 30\u00b0 rotation of the foot sole. Check by looking down at feet during setup."
+    },
+    {
+      "criterion_name": "Knees Shoved Out / Valgus Collapse Prevention",
+      "source_section": "Squat Depth & Figure 2-13",
+      "source_ref_pages": [
+        "Ref p. 14",
+        "Ref p. 20",
+        "Ref p. 33",
+        "Ref p. 35"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 17",
+        "PDF p. 23",
+        "PDF p. 36",
+        "PDF p. 38"
+      ],
+      "figures": [
+        "Figure 2-12",
+        "Figure 2-13"
+      ],
+      "standard_description": "Knees must be actively shoved outward to track parallel with feet, preventing medial knee valgus collapse.",
+      "why_unassessable": "Lateral knee tracking occurs in the frontal plane. From the side, the near leg occludes the far leg and lateral knee cave is invisible. Record a front-view set to assess knee tracking."
+    },
+    {
+      "criterion_name": "Grip Width & Wrist Alignment (Thumbs on Top, Straight Wrists)",
+      "source_section": "Adding the bar & Wrist Alignment",
+      "source_ref_pages": [
+        "Ref p. 27",
+        "Ref p. 28",
+        "Ref p. 29",
+        "Ref p. 35"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 30",
+        "PDF p. 31",
+        "PDF p. 32",
+        "PDF p. 38"
+      ],
+      "figures": [
+        "Figure 2-17",
+        "Figure 2-18"
+      ],
+      "standard_description": "Thumbs placed on top of bar, wrists straight with forearms to keep bar weight on back rather than loading wrists.",
+      "why_unassessable": "Hands and wrists are occluded by 450mm bumper plates and shoulders in a 90\u00b0 side view. Check grip in the rack before unracking."
+    },
+    {
+      "criterion_name": "Rack Height (Mid-Sternum J-Cups)",
+      "source_section": "Adding the bar",
+      "source_ref_pages": [
+        "Ref p. 26",
+        "Ref p. 31"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 29",
+        "PDF p. 34"
+      ],
+      "figures": [
+        "Figure 2-21"
+      ],
+      "standard_description": "Bar should be racked at mid-sternum height so lifter does not have to tiptoe to unrack or rerack.",
+      "why_unassessable": "Requires clear view of empty rack hooks relative to lifter sternum before unrack."
+    }
+  ],
+  "narrative_only_exclusions": [
+    {
+      "topic": "Front Squat vs Back Squat Mechanics Comparison",
+      "source_ref_pages": [
+        "Ref p. 13",
+        "Ref p. 14"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 16",
+        "PDF p. 17"
+      ],
+      "figures": [
+        "Figure 2-8",
+        "Figure 2-9"
+      ],
+      "reason_excluded": "Theoretical narrative explaining why vertical front squat requires high quadriceps force. Not an evaluation standard for a barbell back squat."
+    },
+    {
+      "topic": "Quadriceps vs Hamstrings Muscle Recruitment Claims",
+      "source_ref_pages": [
+        "Ref p. 2",
+        "Ref p. 5",
+        "Ref p. 14",
+        "Ref p. 16"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 5",
+        "PDF p. 8",
+        "PDF p. 17",
+        "PDF p. 19"
+      ],
+      "reason_excluded": "Anatomical/EMG narrative commentary. Muscle activation cannot be measured by computer vision without surface electromyography sensors."
+    },
+    {
+      "topic": "Anterior Cruciate Ligament (ACL) Shearing Force Claims",
+      "source_ref_pages": [
+        "Ref p. 2",
+        "Ref p. 4",
+        "Ref p. 15"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 5",
+        "PDF p. 7",
+        "PDF p. 18"
+      ],
+      "reason_excluded": "Orthopedic biomechanics explanation of force cancellation. Theoretical explanation, not an assessable video rule."
+    },
+    {
+      "topic": "Stretch-Reflex Hamstring Bounce Physiology",
+      "source_ref_pages": [
+        "Ref p. 1",
+        "Ref p. 15",
+        "Ref p. 23"
+      ],
+      "combined_pdf_pages": [
+        "PDF p. 4",
+        "PDF p. 18",
+        "PDF p. 26"
+      ],
+      "reason_excluded": "Physiological description of the stretch-shortening cycle. Explains turnaround velocity, but not a pass/fail geometric rule."
+    }
+  ]
+}
