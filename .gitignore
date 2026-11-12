@@ -18,6 +18,8 @@ output/*.mp4
 output/*.mov
 output/*.avi
 output/*.webm
+output/job_*
+output/uploads/
 
 # Environment variables & secrets
 .env
