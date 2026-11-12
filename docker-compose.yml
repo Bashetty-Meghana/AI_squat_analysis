@@ -1,0 +1,16 @@
+services:
+  squat-coach:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ironpath-ai-squat-coach
+    ports:
+      - "8501:8501"
+    environment:
+      - LLM_PROVIDER=deterministic
+      - YOLO_POSE_MODEL=yolov8s-pose.pt
+      - STREAMLIT_SERVER_MAX_UPLOAD_SIZE=200
+    volumes:
+      - ./output:/app/output
+      - ./samples:/app/samples
+    restart: unless-stopped
