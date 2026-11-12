@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Node / Frontend dependencies
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
 # Model weight binaries (auto-downloaded on first run)
 *.pt
 *.pth

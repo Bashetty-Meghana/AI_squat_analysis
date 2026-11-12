@@ -9,19 +9,24 @@
 
 ### Prerequisites
 - Python 3.10+ (Tested on Python 3.11, 3.12, and 3.13)
+- Node.js 18+ (Tested on v24.13.0) for the React frontend.
 - No external FFmpeg installation needed (`imageio-ffmpeg` bundles an embedded binary automatically).
 
-### 1-Click Launch (Windows)
+### Option 1: Modern React + Tailwind Frontend (FastAPI Backend)
+Double-click `run_react.bat` or run in terminal:
+```cmd
+run_react.bat
+```
+*(On macOS/Linux: `./run_react.sh`)*  
+The application will launch on **`http://localhost:8000`**.
+
+### Option 2: Streamlit All-in-One Frontend
 Double-click `run.bat` or run in terminal:
 ```cmd
 run.bat
 ```
-
-### Linux / macOS Launch
-```bash
-chmod +x run.sh
-./run.sh
-```
+*(On macOS/Linux: `./run.sh`)*  
+The application will launch on **`http://localhost:8501`**.
 
 ### Docker Launch
 ```bash

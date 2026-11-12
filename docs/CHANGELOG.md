@@ -7,6 +7,10 @@ This document tracks all changes, enhancements, and any deleted or replaced file
 ## [Phase 6: Verification, Packaging & Delivery] - 2026-11-12
 
 ### Added
+- `frontend/`: Standalone React + Vite + Tailwind CSS single-page application with synchronized HTML5 Canvas overlay player, interactive layer toggles, rep timeline navigation, consumer score cards, and pro VBT analytics.
+- `server.py`: Production FastAPI REST backend wrapping the decoupled `/analyzer` pipeline as a library, supporting asynchronous job tracking, Range-based video streaming, and static asset serving.
+- `run_react.bat` & `run_react.sh`: Windows and Linux one-click launch scripts for the FastAPI + React frontend on `http://localhost:8000`.
+- `tests/test_api_endpoints.py`: Integration test suite verifying FastAPI healthcheck, sample listings, standards endpoint, and job submission.
 - `tests/test_standards_validation.py`: Unit test suite verifying schema validation, required fields, assessability enums, non-assessable criteria, narrative exclusions, missing field rejection, and evaluator guardrails (non-sagittal perspective, borderline depth).
 - `tests/test_biomechanics_math.py`: Unit test suite verifying 2D angle math (orthogonal, straight, vertical, 45° incline), Y-axis coordinate direction consistency ($y_{\text{hip}} > y_{\text{patella}}$ below parallel), head angle, and rep segmentation on synthetic signals with noise.
 - `demo_rule_change.py`: Standalone demonstration script proving decoupling of skill standards from computer vision code: edits a rule in `skills/squat_standards.json`, re-runs the assessment engine on cached measurements with NO code edits and NO video reprocessing, and dynamically updates findings.
